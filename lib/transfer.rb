@@ -24,7 +24,7 @@ def execute_transaction
   sender.balance -= @amount
   receiver.balance += @amount
   Transfer.status == "complete"
-else 
+else
   "Transaction rejected. Please check your account balance."
 end
 end
