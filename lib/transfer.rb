@@ -15,6 +15,7 @@ class Transfer
     @account
   end
 def valid?
-  sender.status == "open" && receiver.status == "open" ? true:false
+  self.status == "open" && self.status == "open" ? true:false
+
 end
 end
