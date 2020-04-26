@@ -20,13 +20,14 @@ def valid?
   receiver.valid?
 end
 def execute_transaction
-  if valid? && sender.balance > @amount && status == "pending"
-  sender.balance -= @amount
-  receiver.balance += @amount
-  @status = "complete"
-else
-  @status = "rejected"
-  return "Transaction rejected. Please check your account balance."
-end
+   if valid? && @sender.balance > @amount && status == "pending"
+     @sender.balance -= @amount
+     @receiver.balance += @amount
+     @status = "complete"
+   else
+     @status = "rejected"
+     return "Transaction rejected. Please check your account balance."
+   end
+ end
 end
 end
