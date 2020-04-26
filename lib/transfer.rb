@@ -1,10 +1,11 @@
 class Transfer
   # your code here
-  attr_accessor :name, :account, :balance
+  attr_accessor :name, :account, :balance, :status
   def initialize (name, account, balance)
     @name = name
     @account = account
     @balance = balance
+    @status = "pending"
   end
   def sender
     @name
@@ -12,4 +13,5 @@ class Transfer
   def receiver
     @account
   end
+  
 end
