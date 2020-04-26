@@ -16,6 +16,8 @@ class Transfer
   end
 def valid?
   sender.status == "open" && receiver.status == "open" ? true:false
+  sender.valid?
+  receiver.valid?
 
 end
 end
