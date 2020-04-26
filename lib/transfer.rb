@@ -15,6 +15,6 @@ class Transfer
     @account
   end
 def valid?
-  self.name == "valid" && self.account == "valid" ? true:false
+  sender.status == "valid" && receiver.status == "valid" ? true:false
 end
 end
