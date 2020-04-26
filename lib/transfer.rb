@@ -9,4 +9,7 @@ class Transfer
   def sender
     @name
   end
+  def receiver
+    @account
+  end
 end
