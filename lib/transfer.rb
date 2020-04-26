@@ -13,5 +13,5 @@ class Transfer
   def receiver
     @account
   end
-  
+
 end
