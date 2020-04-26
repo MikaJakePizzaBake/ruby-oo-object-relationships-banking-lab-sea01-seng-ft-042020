@@ -23,7 +23,7 @@ def execute_transaction
   if valid? && sender.balance > @amount
   sender.balance -= @amount
   receiver.balance += @amount
-  Transfer.status == "complete"
+  status == "complete"
 else
   "Transaction rejected. Please check your account balance."
 end
