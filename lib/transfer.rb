@@ -6,7 +6,7 @@ class Transfer
     @account = account
     @balance = balance
     @status = "pending"
-    @amount = amount
+    @amount = 50
   end
   def sender
     @name
