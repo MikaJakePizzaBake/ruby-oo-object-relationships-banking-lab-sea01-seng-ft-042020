@@ -8,11 +8,9 @@ class Transfer
     @amount = 50
   end
 
-def valid?
-  @sender.status == "open" && @receiver.status == "open" ? true:false
-  @sender.valid?
-  @account.valid?
-end
+  def valid?
+     @sender.valid? && @receiver.valid? ? true:false
+   end
 def execute_transaction
   if valid? && @sender.balance > @amount && status == "pending"
     @sender.balance -= @amount
