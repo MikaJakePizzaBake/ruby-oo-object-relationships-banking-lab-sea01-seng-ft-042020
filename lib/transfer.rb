@@ -6,7 +6,7 @@ class Transfer
     @account = account
     @balance = balance
   end
-  def sender(name)
+  def sender
     @name
   end
 end
